@@ -1,6 +1,6 @@
-# osam_yangsikjang_img2format
+# 양식장
 
-## osam project
+## Google Cloud Vision OCR을 활용해 이미지를 자동으로 양식(format)으로 바꾸고 내용을 추출하는 앱
 
 1. Chocolate
   - dark
