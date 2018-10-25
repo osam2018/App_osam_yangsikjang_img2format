@@ -22,7 +22,7 @@
 앱에 존재하는 기능들을 설명하겠습니다. 
 
 회원 가입
-(https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![로그인]("../login.png")
 
 로그인
 
