@@ -54,11 +54,11 @@ firebase의 auth 기능을 이용하여 이메일과 비밀번호를 통해 회�
 양식을 선택했을 때 나오는 화면입니다. 양식을 삭제하거나 양식의 제목 및 내용, 추출된 텍스트를 볼 수 있습니다. URL을 클릭하면 양식을 수정할 수 있는 페이지인 /format/:formatID로 넘어갑니다. URL로 구성했기 때문에 앱 뿐만이 아닌 컴퓨터로도 접근 가능하여 훨씬 더 수월하게 수정을 할 수 있습니다.
 
 
-![title](webPage.png) ![title](webPageEdit.png) ![title](webPageEditted.png)
+![title](webPage.png) ![title](webPageEditted.png)
 URL을 클릭하면 다음과 같이 웹 페이지가 뜨며, 왼쪽 위의 펜 화면을 통해 수정할 수 있는 것을 볼 수 있습니다. 
 
 
-![title](search.png) ![title](searchExample.png)
+![title](Search.png) ![title](searchExample.png)
 양식 검색
 
 양식을 검색할 수 있는 화면입니다. 서버에 올라온 모든 양식들을 볼 수 있으며, 제목을 검색하여 제목이 같은 양식을 찾아낼 수 있습니다.
