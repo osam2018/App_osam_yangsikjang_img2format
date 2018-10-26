@@ -22,7 +22,7 @@
 앱에 존재하는 기능들을 설명하겠습니다. 
 
 
-![title](login.png)
+![title](login.png) ![title](signup.png)
 
 
 회원 가입과 로그인
@@ -30,27 +30,35 @@
 firebase의 auth 기능을 이용하여 이메일과 비밀번호를 통해 회원가입과 로그인을 할 수 있습니다. 로그인이 되면 auth가 유지되기 때문에 앱을 본격적으로 사용할 수 있습니다.
 
 
+![title](main.png) ![title](imgChoose.png) ![title](imgSet.png)
+
 이미지 선택
 
 로그인 이후 앱의 초기 화면입니다. 업로드할 이미지를 선택하고, 그 이미지의 모습을 이미지뷰에 보여줍니다.
 
+![title](imgUpload.png)
 
 이미지 업로드
 
 이미지 업로드 버튼을 선택하면 나오는 화면입니다. 이미지의 제목과 내용을 설정할 수 있습니다. 이후 업로드를 하면 그 정보들과 유저의 ID가 같이 DB에 저장하게 됩니다. 
 이후 앱은 GET request를 ${serverURL}/process/:imageID 로 보내게 되어 이미지의 처리를 시작할 수 있게 합니다. GET request를 받은 node 페이지는 업로드된 이미지를 google cloud vision에 올리고 결과값을 코드로 바꿔줍니다.
 
-
+![title](formats.png)
 내 양식
 
 내가 가지고 있는 양식을 모두 보여주는 화면입니다. DB로부터 유저의 ID와 현재 Auth상의 ID가 같은 양식만 보여주게 됩니다.
 
+![title](format.png)
 개별 양식
 
 양식을 선택했을 때 나오는 화면입니다. 양식을 삭제하거나 양식의 제목 및 내용, 추출된 텍스트를 볼 수 있습니다. URL을 클릭하면 양식을 수정할 수 있는 페이지인 /format/:formatID로 넘어갑니다. URL로 구성했기 때문에 앱 뿐만이 아닌 컴퓨터로도 접근 가능하여 훨씬 더 수월하게 수정을 할 수 있습니다.
 
+
+![title](webPage.png) ![title](webPageEdit.png) ![title](webPageEditted.png)
 URL을 클릭하면 다음과 같이 웹 페이지가 뜨며, 왼쪽 위의 펜 화면을 통해 수정할 수 있는 것을 볼 수 있습니다. 
 
+
+![title](search.png) ![title](searchExample.png)
 양식 검색
 
 양식을 검색할 수 있는 화면입니다. 서버에 올라온 모든 양식들을 볼 수 있으며, 제목을 검색하여 제목이 같은 양식을 찾아낼 수 있습니다.
