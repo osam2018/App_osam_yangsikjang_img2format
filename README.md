@@ -65,21 +65,28 @@ URL을 클릭하면 다음과 같이 웹 페이지가 뜨며, 왼쪽 위의 펜 
 
 
 
-
 ## 기술 설명
 유저 등록/로그인 처리 및 파일 저장, 데이터베이스 등은 Google의 Firebase을 활용해 개발을 용이하고 확장성있게 하였습니다. 
+
 node.js 와 express.js를 이용하여 이미지의 업로드 감지 및 데이터 베이스 접근, 수정을 하였고 Goopgle의 CloudVision을 이용해 OCR 처리를 하였습니다. 
+
+앱 내에서는 volley 라는 공개 소프트웨어를 이용하여 서버와의 통신을 처리 하였습니다.
+
 이후 처리된 OCR은 json 객체로 반환되어 오는데 이를 parsing하여 html 내에 적절한 위치로 바꿔주었고,
 라이브러리는 textFill.js를 이용해 텍스트들이 제대로 보이게 하고 contentTools.js를 이용해 이를 수정 가능하게 하였습니다. 
+
 그리고 이 페이지는 다시 node.js와 express.js를 이용해 serve 하고 있습니다.
+
 이때 저의 접근할 수 있는 URL은 https://osam-pofcc.run.goorm.io 입니다. 이 URL을 통해 웹으로도 양식에 접근 및 수정할 수 있습니다.
+
 마지막으로 구름IDE의 '항상 켜두기' 기능을 이용해 서버를 호스팅을 하고 있습니다.
 
 
 
 
 ## 사용 방법
-  첨부된 apk는 제 서버로 세팅되어 있는 것으로 저장시 바로 사용할 수 있습니다. 직접 서버를 구성하고 앱을 사용하길 원하신다면 먼저 [파이어 베이스 등록하기](https://firebase.google.com/docs/auth/
+  첨부된 apk는 제 서버로 세팅되어 있는 것으로 저장시 바로 사용할 수 있습니다. 
+  직접 서버를 구성하고 앱을 사용하길 원하신다면 먼저 [파이어 베이스 등록하기](https://firebase.google.com/docs/auth/
  'backend')를 읽어서 credential과 각자의 앱을 firebase에서 세팅해주어야 합니다. 이후 받은 credentials.json을 backend로 옮겨 준 후 자신이 호스팅하고 있는 URL을 https://osam-pofcc.run.goorm.io/를 대신하여  node.js 와 앱 내에 세팅해 주어야 합니다.
  그리고 "node start.js" 명령을 통해 서버를 실행시켜 주면 백엔드 서버가 작동하게 됩니다.
 
